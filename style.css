@@ -1,6 +1,10 @@
 /* DEFAULT VERSION */
 
 /* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
 .navbar-brand {
   font-family: Viga;
   font-size: 32px;
@@ -10,7 +14,32 @@
 .jumbotron {
   background-image: url("https://res.cloudinary.com/naandalistcloud/image/upload/v1580188460/img-personal-web/jumbotron-bg_mxpoyu.jpg");
   background-size: cover;
-  height: 640px;
+  text-align: center;
+  height: 540px;
+  position: relative;
+}
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+.jumbotron .display-4 {
+  color: white;
+  margin-top: 150px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+.jumbotron .display-4 span {
+  font-weight: bold;
 }
 
 /* Utility */
@@ -41,5 +70,10 @@
   }
   .jumbotron {
     margin-top: -75px;
+    height: 640px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 62px;
   }
 }
