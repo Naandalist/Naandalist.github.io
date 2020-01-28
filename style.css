@@ -6,6 +6,12 @@
   font-size: 32px;
 }
 
+/* Utility */
+.button {
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
 /* DESKTOP VERSION */
 @media (min-width: 992px) {
   .nav-link {
