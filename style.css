@@ -68,6 +68,27 @@
   margin-top: -5px;
 }
 
+/* Containspace  */
+.contentspace {
+  margin-top: 120px;
+  text-align: center;
+}
+.contentspace h3 {
+  font-size: 52px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.contentspace h3 span {
+  font-weight: bold;
+}
+.contentspace p {
+  font-size: 18px;
+  color: grey;
+  margin: 25px 0 25px 0;
+  font-weight: 200;
+}
+
 /* Utility */
 .button {
   text-transform: uppercase;
@@ -98,8 +119,11 @@
     margin-top: -75px;
     height: 640px;
   }
-
   .jumbotron .display-4 {
     font-size: 62px;
+  }
+
+  .contentspace {
+    text-align: left;
   }
 }
