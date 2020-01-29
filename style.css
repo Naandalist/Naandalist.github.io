@@ -1,5 +1,5 @@
 /* DEFAULT VERSION */
-.body {
+body {
   overflow-x: hidden;
 }
 
@@ -138,6 +138,9 @@
 
 /* DESKTOP VERSION */
 @media (min-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
   .navbar-brand,
   .nav-link {
     color: black;
